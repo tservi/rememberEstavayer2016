@@ -1,11 +1,13 @@
 language: php
 
 php:
-  - 5.4
-  - 5.5
   - 7.0
-  
+ 
+script:  phpunit --self-update
+ 
 deploy:
   provider: heroku
   api_key:
     secure: f952ca9e-3dbb-4ef5-888a-391b164896a0
+    
+ 
