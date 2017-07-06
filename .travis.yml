@@ -3,7 +3,7 @@ language: php
 php:
   - 7.0
  
-script:  phpunit --self-update
+script:  phpunit --no-configuration 
  
 deploy:
   provider: heroku
